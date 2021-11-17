@@ -1,0 +1,75 @@
+body {
+  font-family: Trajana Sans !important;
+  font-weight: lighter;
+}
+
+h1,
+h2 {
+  display: block;
+  margin-left: 50px;
+}
+
+i {
+  font-size: 80px;
+  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span {
+  margin-left: 50px;
+}
+
+.card {
+  border-color: grey !important;
+  border-radius: 10px !important;
+}
+.outerCard {
+  background-color: #5bc0e0 !important;
+}
+.currentCity {
+  background-color: #ebf5fa !important;
+}
+
+.moreInfo {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: fit-content;
+}
+.card {
+  padding: 20px;
+  border-radius: 40px;
+}
+.currentCityData {
+  font-size: 48px;
+}
+
+.far {
+  color: burlywood;
+}
+.col-6 {
+  text-align: center;
+}
+
+.nextDaysName,
+.nextDaysTemp,
+.nextDaysIcon {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nextDaysName {
+  font-weight: bold;
+}
+.innerCard {
+  padding: 10px;
+  background-color: #ebf5fa !important;
+}
