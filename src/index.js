@@ -48,6 +48,14 @@ function selectCity(event) {
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", selectCity);
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
+  return `${day} ${hours}:${minutes}`;
+}
+
 function showTemp(response) {
   console.log(response.data);
   let cityName = response.data.name;
@@ -60,4 +68,6 @@ function showTemp(response) {
   description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
+  let dateElement = document.querySelector("#current-time");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }

@@ -5,8 +5,10 @@ body {
 
 h1,
 h2 {
-  display: block;
-  margin-left: 50px;
+  display: block !important;
+  text-align: center !important;
+  margin: 0 !important;
+  margin-bottom: 10px !important;
 }
 
 h2 {
@@ -45,6 +47,7 @@ p {
 
 .form-inline {
   display: block;
+  margin-bottom: 20px;
 }
 .currentCity {
   background-color: #f3f0d7 !important;
