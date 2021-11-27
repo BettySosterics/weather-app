@@ -9,6 +9,9 @@ h2 {
   margin-left: 50px;
 }
 
+h2 {
+  font-size: 15px !important;
+}
 i {
   font-size: 80px;
   padding: 10px;
@@ -16,33 +19,60 @@ i {
 }
 
 p {
-  margin: 0 auto;
-  text-align: center;
+  margin: 0 !important;
+  text-align: center !important;
+  color: #5d534a !important;
 }
 
-span {
-  margin-left: 50px;
+.btn {
+  background: #f3f0d7 !important;
+  color: #5d534a !important;
 }
-
+.btn:hover {
+  background: #5d534a !important;
+  color: #fff !important;
+}
 .card {
   border-color: grey !important;
   border-radius: 10px !important;
 }
 .outerCard {
-  background-color: #5bc0e0 !important;
+  background-color: #cee5d0 !important;
 }
-.currentCity {
-  background-color: #ebf5fa !important;
+.form-control {
+  background: #f3f0d7 !important;
 }
 
+.form-inline {
+  display: block;
+}
+.currentCity {
+  background-color: #f3f0d7 !important;
+  color: #5d534a !important;
+}
+
+.currentCity,
+.currentTemperature {
+  text-align: center !important;
+}
+
+.currentTime {
+  text-align: right !important;
+  display: inline !important;
+}
 .moreInfo {
-  text-align: left;
-  margin-left: 50px;
+  text-align: center !important;
+
+  margin: 0 !important;
+}
+
+.col {
+  vertical-align: baseline !important;
 }
 
 .container {
   margin: 50px auto;
-  max-width: fit-content;
+  max-width: 1000px !important;
 }
 .card {
   padding: 20px;
@@ -55,21 +85,34 @@ span {
 .far {
   color: burlywood;
 }
+
+.fas,
+.far {
+  font-size: 40px !important;
+}
 .col-6 {
   text-align: center;
 }
 
 .nextDaysName,
-.nextDaysTemp,
+.nextDaysTemp {
+  text-transform: uppercase;
+  text-align: center;
+  color: #5d534a !important;
+}
+
 .nextDaysIcon {
   text-transform: uppercase;
   text-align: center;
 }
-
 .nextDaysName {
   font-weight: bold;
 }
 .innerCard {
   padding: 10px;
-  background-color: #ebf5fa !important;
+  background-color: #f3f0d7 !important;
+}
+
+#descr {
+  margin: 0 !important;
 }
