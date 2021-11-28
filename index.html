@@ -37,31 +37,36 @@
 
         <div class="card currentCity">
           <div class="row currentCityData">
-            <div class="col-4" id="current-city"></div>
-            <div class="col-2">
-              <img src="" alt="" id="currentWeatherLogo" />
-            </div>
-            <div class="col-2" id="current-temperature"></div>
+            <div class="col-6" id="current-city">New York</div>
+            <div class="col-2"></div>
+            <span id="current-temperature">12</span>
             <a href="#" id="celsius-link" class="active">°C</a> |
             <a href="#" id="fahrenheit-link">°F</a>
-            <div class="col-2"></div>
+            <div></div>
           </div>
+
           <div class="row">
-            <div class="col">
+            <div class="col-8">
               <p class="moreInfo">
                 <span id="descr">CLOUDY</span>
                 <br />
                 humidity: <span id="humidity">22</span>%
                 <br />
+                wind: <span id="wind">10 </span>km/h
               </p>
             </div>
-            <div class="col">
-              <div>Last updated:</div>
-              <h2 id="current-time"></h2>
+            <div class="col-4">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                id="currentWeatherLogo"
+              />
             </div>
           </div>
         </div>
         <br />
+
+        <!---
         <div class="card innerCard">
           <div class="row nextDaysName">
             <div class="col">Thu</div>
@@ -89,7 +94,12 @@
             <div class="col"><i class="far fa-sun"></i></div>
             <div class="col"><i class="fas fa-cloud-rain"></i></div>
           </div>
-        </div>
+        </div> --->
+
+        <p class="lastUpdated">
+          Last updated:
+          <span id="current-time"></span>
+        </p>
       </div>
     </div>
 
