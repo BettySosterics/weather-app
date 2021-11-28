@@ -1,39 +1,3 @@
-let now = new Date();
-
-let h2 = document.querySelector("h2");
-let date = now.getDate();
-let hours = now.getHours();
-let minutes = now.getMinutes();
-let year = now.getFullYear();
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-
-let months = [
-  "Jan",
-  "Feb",
-  "March",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-let month = months[now.getMonth()];
-h2.innerHTML = `${day}  ${hours}:${minutes}`;
-
 function selectCity(event) {
   event.preventDefault();
   let input = document.querySelector("#city-input");
@@ -51,8 +15,23 @@ form.addEventListener("submit", selectCity);
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minutes = date.getMinutes();
-  let day = date.getDay();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -61,13 +40,13 @@ function showTemp(response) {
   let cityName = response.data.name;
   let currentTemp = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#current-city");
-  cityElement.innerHTML = cityName;
   let tempElement = document.querySelector("#current-temperature");
-  tempElement.innerHTML = `${currentTemp}°C`;
   let description = document.querySelector("#descr");
-  description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");
-  humidity.innerHTML = response.data.main.humidity;
   let dateElement = document.querySelector("#current-time");
+  cityElement.innerHTML = cityName;
+  tempElement.innerHTML = `${currentTemp}°C`;
+  description.innerHTML = response.data.weather[0].description;
+  humidity.innerHTML = response.data.main.humidity;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
