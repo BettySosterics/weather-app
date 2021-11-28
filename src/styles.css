@@ -5,8 +5,6 @@ body {
 
 h1,
 h2 {
-  display: block !important;
-  text-align: center !important;
   margin: 0 !important;
   margin-bottom: 10px !important;
 }
@@ -28,7 +26,6 @@ p {
 
 img {
   width: 100px;
-  vertical-align: top !important;
 }
 
 .btn {
@@ -59,27 +56,23 @@ img {
   color: #5d534a !important;
 }
 
-.currentCity,
-.currentTemperature {
-  text-align: center !important;
+#current-city {
+  text-align: left !important;
 }
 
-.currentTime {
-  text-align: right !important;
-  display: inline !important;
-}
 .moreInfo {
-  text-align: left !important;
   margin: 20 !important;
+  text-align: left !important;
 }
 
 .container {
   margin: 50px auto;
-  max-width: 1000px !important;
+  max-width: 600px !important;
 }
 .card {
   padding: 20px;
   border-radius: 40px;
+  word-wrap: normal !important;
 }
 .currentCityData {
   font-size: 30px;
@@ -92,9 +85,6 @@ img {
 .fas,
 .far {
   font-size: 40px !important;
-}
-.col-6 {
-  text-align: center;
 }
 
 .nextDaysName,
@@ -128,4 +118,9 @@ img {
 .active:hover {
   text-decoration: none;
   color: #5d534a;
+}
+
+.lastUpdated {
+  text-align: right !important;
+  vertical-align: bottom !important;
 }
