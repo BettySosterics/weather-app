@@ -22,12 +22,14 @@ function formatDate(timestamp) {
 }
 
 function showTemp(response) {
+  console.log(response.data);
   let cityName = response.data.name;
   let currentTemp = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#current-city");
   let tempElement = document.querySelector("#current-temperature");
   let description = document.querySelector("#descr");
   let humidity = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#current-time");
   let iconElement = document.querySelector("#currentWeatherLogo");
 
@@ -37,6 +39,7 @@ function showTemp(response) {
   tempElement.innerHTML = `${currentTemp}°C`;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
