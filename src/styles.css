@@ -28,6 +28,7 @@ p {
 
 img {
   width: 100px;
+  vertical-align: top !important;
 }
 
 .btn {
@@ -68,13 +69,8 @@ img {
   display: inline !important;
 }
 .moreInfo {
-  text-align: center !important;
-
-  margin: 0 !important;
-}
-
-.col {
-  vertical-align: baseline !important;
+  text-align: left !important;
+  margin: 20 !important;
 }
 
 .container {

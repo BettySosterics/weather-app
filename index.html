@@ -28,23 +28,24 @@
             class="form-control"
             id="city-input"
             autofocus
+            autocomplete="off"
           />
           <div class="col searchButton">
             <button type="submit" class="btn btn-light">Search</button>
           </div>
         </form>
 
-        
-
         <div class="card currentCity">
           <div class="row currentCityData">
-            <div class="col" id="current-city">Vienna</div>
-            <div class="col" id="current-temperature">23°C / 73,4°F</div>
+            <div class="col" id="current-city"></div>
+            <div class="col">
+              <img src="" alt="" id="currentWeatherLogo" />
+            </div>
+            <div class="col" id="current-temperature"></div>
           </div>
           <div class="row">
             <div class="col">
               <p class="moreInfo">
-                <div>Last updated:</div><h2 id="current-time"></h2>
                 <span id="descr">CLOUDY</span>
                 <br />
                 humidity: <span id="humidity">22</span>%
@@ -52,10 +53,8 @@
               </p>
             </div>
             <div class="col">
-              <img 
-              src="" 
-              alt =""
-              id="currentWeatherLogo"/>
+              <div>Last updated:</div>
+              <h2 id="current-time"></h2>
             </div>
           </div>
         </div>
