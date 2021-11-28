@@ -82,7 +82,7 @@ img {
   border-radius: 40px;
 }
 .currentCityData {
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .far {
@@ -118,4 +118,14 @@ img {
 
 #descr {
   margin: 0 !important;
+}
+
+.active {
+  cursor: default;
+  color: #5d534a;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: #5d534a;
 }
