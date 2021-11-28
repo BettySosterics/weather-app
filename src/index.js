@@ -36,7 +36,6 @@ function formatDate(timestamp) {
 }
 
 function showTemp(response) {
-  console.log(response.data);
   let cityName = response.data.name;
   let currentTemp = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#current-city");
@@ -44,9 +43,19 @@ function showTemp(response) {
   let description = document.querySelector("#descr");
   let humidity = document.querySelector("#humidity");
   let dateElement = document.querySelector("#current-time");
+  let iconElement = document.querySelector("#currentWeatherLogo");
+
   cityElement.innerHTML = cityName;
   tempElement.innerHTML = `${currentTemp}°C`;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute(
+    "alt",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
+  );
 }
