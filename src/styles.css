@@ -121,6 +121,10 @@ img {
 }
 
 .lastUpdated {
-  text-align: right !important;
+  text-align: left !important;
   vertical-align: bottom !important;
+}
+
+#current-time {
+  text-align: left !important;
 }
