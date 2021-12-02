@@ -126,4 +126,12 @@ p {
 }
 .weather-forecast {
   text-align: center;
+  background-color: #f3f0d7 !important;
+}
+
+.weather-forecast-date {
+  opacity: 0.6;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }

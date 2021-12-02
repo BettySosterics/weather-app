@@ -42,7 +42,6 @@
             <span id="current-temperature">12</span>
             <a href="#" id="celsius-link" class="active">°C</a> |
             <a href="#" id="fahrenheit-link">°F</a>
-            <div></div>
           </div>
 
           <div class="row">
@@ -60,6 +59,7 @@
                 src="http://openweathermap.org/img/wn/10d@2x.png"
                 alt=""
                 id="currentWeatherLogo"
+                width="90"
               />
             </div>
           </div>
@@ -69,49 +69,16 @@
         <div class="card weather-forecast">
           <div class="row">
             <div class="col-2">
-              Thu
+              <div class="weather-forecast-date">Thu</div>
               <img
                 src="http://openweathermap.org/img/wn/10d@2x.png"
                 alt=""
                 width="40"
               />
-              27°C / 75°F
-            </div>
-            <div class="col-2">
-              Thu
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt=""
-                width="40"
-              />
-              27°C / 75°F
-            </div>
-            <div class="col-2">
-              Thu
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt=""
-                width="40"
-              />
-              27°C / 75°F
-            </div>
-            <div class="col-2">
-              Thu
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt=""
-                width="40"
-              />
-              27°C / 75°F
-            </div>
-            <div class="col-2">
-              Thu
-              <img
-                src="http://openweathermap.org/img/wn/10d@2x.png"
-                alt=""
-                width="40"
-              />
-              27°C / 75°F
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">17° </span>
+                <span class="weather-forecast-temperature-min"> 15°</span>
+              </div>
             </div>
           </div>
         </div>
@@ -124,9 +91,7 @@
     </div>
 
     <p>
-      <a
-        href="https://github.com/BettySosterics/weather-app/tree/844c0738d08f9e0d2d027e074c0bcdb32dd9b6fd"
-        target="_blank"
+      <a href="https://github.com/BettySosterics/weather-app" target="_blank"
         >Open-source code</a
       >
       by Betty Sosterics
