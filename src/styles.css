@@ -24,10 +24,6 @@ p {
   color: #5d534a !important;
 }
 
-img {
-  width: 100px;
-}
-
 .btn {
   background: #f3f0d7 !important;
   color: #5d534a !important;
@@ -127,4 +123,7 @@ img {
 
 #current-time {
   text-align: left !important;
+}
+.weather-forecast {
+  text-align: center;
 }
