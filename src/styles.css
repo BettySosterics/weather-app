@@ -1,7 +1,6 @@
 body {
   font-family: Trajana Sans !important;
   font-weight: lighter !important;
-  background: whitesmoke !important;
 }
 
 h1,
@@ -38,7 +37,7 @@ p {
   border-color: grey !important;
   border-radius: 10px !important;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%) !important;
-  background-color: lightsteelblue !important;
+  background-color: rgb(176, 196, 222) !important;
 }
 .outerCard {
   box-shadow: #5d534a !important;
