@@ -1,6 +1,7 @@
 body {
   font-family: Trajana Sans !important;
-  font-weight: lighter;
+  font-weight: lighter !important;
+  background: whitesmoke !important;
 }
 
 h1,
@@ -25,30 +26,35 @@ p {
 }
 
 .btn {
-  background: #f3f0d7 !important;
+  background: lightsteelblue !important;
   color: #5d534a !important;
+  border-color: grey !important;
 }
 .btn:hover {
   background: #5d534a !important;
-  color: #fff !important;
+  color: whitesmoke !important;
 }
 .card {
   border-color: grey !important;
   border-radius: 10px !important;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%) !important;
+  background-color: lightsteelblue !important;
 }
 .outerCard {
-  background-color: #cee5d0 !important;
+  box-shadow: #5d534a !important;
+  background: #e4cda78e !important;
 }
 .form-control {
-  background: #f3f0d7 !important;
+  background: whitesmoke !important;
+  border-color: grey !important;
 }
 
 .form-inline {
   display: block;
   margin-bottom: 20px;
+  border-color: grey !important;
 }
 .currentCity {
-  background-color: #f3f0d7 !important;
   color: #5d534a !important;
 }
 
@@ -62,7 +68,7 @@ p {
 }
 
 .container {
-  margin: 50px auto;
+  margin: 30px auto;
   max-width: 600px !important;
 }
 .card {
@@ -74,46 +80,8 @@ p {
   font-size: 30px;
 }
 
-.far {
-  color: burlywood;
-}
-
-.fas,
-.far {
-  font-size: 40px !important;
-}
-
-.nextDaysName,
-.nextDaysTemp {
-  text-transform: uppercase;
-  text-align: center;
-  color: #5d534a !important;
-}
-
-.nextDaysIcon {
-  text-transform: uppercase;
-  text-align: center;
-}
-.nextDaysName {
-  font-weight: bold;
-}
-.innerCard {
-  padding: 10px;
-  background-color: #f3f0d7 !important;
-}
-
 #descr {
   margin: 0 !important;
-}
-
-.active {
-  cursor: default;
-  color: #5d534a;
-}
-
-.active:hover {
-  text-decoration: none;
-  color: #5d534a;
 }
 
 .lastUpdated {
@@ -126,12 +94,11 @@ p {
 }
 .weather-forecast {
   text-align: center;
-  background-color: #f3f0d7 !important;
 }
 
 .weather-forecast-date {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.6;
+  opacity: 0.8;
 }
